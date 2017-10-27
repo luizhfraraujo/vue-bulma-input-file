@@ -25,7 +25,7 @@ var config = {
     ]
   },
   externals: {
-    //moment: 'moment'
+    moment: 'moment'
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin( {
@@ -44,17 +44,17 @@ module.exports = [
   merge(config, {
     entry: path.resolve(__dirname + '/src/plugin.js'),
     output: {
-      filename: 'vue-bulma-input-file.min.js',
+      filename: 'vue-clock.min.js',
       libraryTarget: 'window',
-      library: 'VueBulmaInputFile',
+      library: 'VueClock',
     }
   }),
   merge(config, {
     entry: path.resolve(__dirname + '/src/VueBulmaInputFile.vue'),
     output: {
-      filename: 'vue-bulma-input-file.js',
+      filename: 'vue-clock.js',
       libraryTarget: 'umd',
-      library: 'vue-bulma-input-file',
+      library: 'vue-clock',
       umdNamedDefine: true
     }
   })

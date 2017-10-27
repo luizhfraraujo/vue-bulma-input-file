@@ -2,13 +2,13 @@
   <div class="vue-bulma">
       <div class="file">
         <label class="file-label">
-            <input class="file-input" type="file" @change="onChange" name="vue-bulma">
+            <input class="file-input" type="file" @change="onChange">
             <span class="file-cta">
             <span class="file-icon">
                 <i class="fa fa-upload"></i>
             </span>
             <span v-show="showFileLabel" class="file-label">
-                {{fileLabel}}
+               {{fileLabel}}
             </span>
             </span>
         </label>
